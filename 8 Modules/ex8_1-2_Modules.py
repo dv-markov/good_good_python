@@ -1,6 +1,8 @@
 import math
 import time
 import pprint
+# по стандарту PEP-8 каждый модуль импортируется на отдельной строчке в начале программы
+
 
 print(locals())
 
@@ -66,6 +68,10 @@ pprint.pprint(locals())
 a = cl(1.8)
 print(a)
 print(pi)
+
+# импорт всего содержимого библиотеке
+# from math import *
+# крайне не рекомендуется
 
 
 

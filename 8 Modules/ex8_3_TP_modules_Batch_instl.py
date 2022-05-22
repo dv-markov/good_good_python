@@ -16,3 +16,7 @@ print(sys.path)
 
 # создание файла для пакетной установки
 # pip freeze > requirements.txt
+
+# установка пакета модулей из файла:
+# pip install -r requirements.txt
+

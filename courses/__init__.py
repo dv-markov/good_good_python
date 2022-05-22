@@ -1,13 +1,11 @@
 # абсолютный импорт
 # from courses.python import get_python
 
-# import java
-# from java import *
-# # from .java import *
-# # import .panda
-#
-# from courses.java import *
+# варианты импорта в файл __init__.py
+# нужно указывать абсолютный или относительный путь
 # import courses.java
+# from courses.java import *
+# from .java import *
 
 # относительный импорт
 # только через from

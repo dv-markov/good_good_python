@@ -1,3 +1,5 @@
+# 8.1 Импорт стандартных модулей. Команды import и from
+
 import math
 import time
 import pprint
@@ -18,7 +20,6 @@ print(math.pi)
 print("""
 # Замена модуля на локальную переменную
 """)
-pprint
 math = "математика"
 pprint.pprint(locals())
 # будет ошибка

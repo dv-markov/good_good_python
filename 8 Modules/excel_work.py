@@ -17,6 +17,9 @@ def double_num(num):
 df['Doubled'] = df['Left+Sold'].apply(double_num)
 print(df.head())
 
-writer = pd.ExcelWriter('new_Vetec.xlsx')
-df.to_excel(writer, 'new_sheet')
-writer.save()
+print(df)
+d = dict()
+
+# writer = pd.ExcelWriter('new_Vetec.xlsx')
+# df.to_excel(writer, 'new_sheet')
+# writer.save()

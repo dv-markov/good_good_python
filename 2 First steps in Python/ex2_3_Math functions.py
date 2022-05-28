@@ -7,6 +7,8 @@ print(round(130.5), round(131.5), round(130.05, 1), round(130.15, 1))
 print(round(130.53854321), round(130.50000001), round(130.5000001, 0), round(130.598463))
 a = max(round(130.50001), 2, abs(min(10, 5, -3)), pow(-10, 2) + 30)
 print(a)
+# модуль числа
+print(abs(-500))
 
 # Модуль math
 import math

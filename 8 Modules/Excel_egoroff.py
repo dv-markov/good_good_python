@@ -28,8 +28,6 @@ for row in sheet.iter_rows(min_row=2, max_row=20, min_col=1, max_col=13):
 sheet_2 = book.worksheets[0]
 print(sheet_2)
 
-
-
 book.close()
 
 

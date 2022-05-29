@@ -129,10 +129,16 @@ print(*(next(gen) for i in range(20)))
 print()
 
 # Task 8
-a, b = map(int, input().split())
-gen = (0.5 * pow(x / 100, 2) - 2 for x in range(a * 100, b * 100 + 1))
-for x in range(20):
-    print(round(next(gen), 2), end=" ")
-print()
+# a, b = map(int, input().split())
+# gen = (0.5 * pow(x / 100, 2) - 2 for x in range(a * 100, b * 100 + 1))
+# for x in range(20):
+#     print(round(next(gen), 2), end=" ")
+# print()
+
+# test lst cycle with 2 entries
+lst1 = [(1, '1a'), (2, '2a'), (3, '3a')]
+print(lst1)
+for k, v in lst1:
+    print(k, v)
 
 

@@ -174,36 +174,18 @@ for k in range(5):
 
 
 # Task 5
-
-# def prime_gen():
-#     p = 1
-#     while True:
-#         p += 1
-#         # for x in range(2, int(p ** 0.5) + 1):
-#         for x in range(1, p):
-#             if p % x == 0:
-#                 break
-#         yield p
-
 def prime_gen():
-    for i in range(2, 100):
-        # for j in range(2, int(i ** 0.5) + 1):
-        #     if i % j == 0:
-        #         break
-        yield i
+    p = 1
+    while True:
+        p += 1
+        for x in range(2, int(p ** 0.5) + 1):
+            if p % x == 0:
+                break
+        else:
+            yield p
 
 
-print(next(prime_gen()))
-print(next(prime_gen()))
-print(next(prime_gen()))
+pg = prime_gen()
 
-# print(prime_gen())
-# print(prime_gen())
-
-# for i in range(2, 100):
-#     for j in range(2, int(i ** 0.5) + 1):
-#         if i % j == 0:
-#             break
-#     else:
-#         print(i, end=' ')
-
+for k in range(20):
+    print(next(pg), end=' ')

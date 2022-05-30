@@ -62,3 +62,7 @@ print(a)
 #
 # for i in range(3):
 #     print(next(m), end=' ')
+
+# Task 2
+# lst = list(map(lambda x: abs(int(x)), input().split()))
+# print(*lst)

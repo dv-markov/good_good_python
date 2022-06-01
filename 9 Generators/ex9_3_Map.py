@@ -57,6 +57,12 @@ print(a)
 # a = list(s)
 # print(a)
 
+
+print("""
+# Задачи
+""")
+
+
 # Task 1
 # m = map(float, input().split())
 #

@@ -45,6 +45,7 @@ print(list(range(*d)))
 print(range(*d))
 print(*range(*d))
 
+# распаковка значений в список
 lst1 = [*range(*d), *(True, False), *a]
 print(lst1)
 
@@ -98,6 +99,14 @@ print("\n", "Задачи", sep='')
 # d = {}
 
 # # Variant 1
+
+# Sample Input:
+"""
+Города=about-cities
+Машины=read-of-cars
+Самолеты=airplanes
+"""
+
 # import sys
 # lst_in = list(map(str.strip, sys.stdin.readlines()))
 # menu = {'Главная': 'home', 'Архив': 'archive', 'Новости': 'news'}
@@ -111,4 +120,4 @@ print("\n", "Задачи", sep='')
 # d = {x.split('=')[0]: x.split('=')[1] for x in lst_in}
 # menu = {**menu, **d}
 
-# print(menu)
+print(menu)

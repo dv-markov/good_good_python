@@ -124,3 +124,10 @@ def get_least(d, l=3):
 # d = dict(map(lambda x: x.split(':'), lst_in))
 d = {int(k): v for v, k in map(lambda x: x.split(':'), lst_in)}
 print(*get_least(d))
+
+
+# Дополнительная фишка для сортировки словаря
+dict1 = {1: 1, 2: 9, 3: 4}
+sorted_dict = {}
+sorted_keys = sorted(dict1, key=dict1.get)
+print(sorted_keys)  # [1, 3, 2]

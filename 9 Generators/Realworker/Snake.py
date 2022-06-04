@@ -73,3 +73,9 @@ def move_snake4(a, start, end):
 a4 = move_snake4(a0, 0, len(a0) - 1)
 print(a4)
 
+z = iter(range(36))
+a5 = [[next(z, 0) for x in range(6)] for y in range(6)]
+print(a5)
+
+a6 = move_snake4(a5, 0, len(a5) - 1)
+print(a6)

@@ -90,3 +90,56 @@ print(type(x) and type(y) in (int, float))
 #     tset = {type(a), type(b)}
 #     if tset <= {int, float} or tset == {str}:
 #         return a + b
+
+
+print("""
+Task 3""")
+
+
+# Task 3
+def get_sum(it):
+    s = 0
+    for x in it:
+        if type(x) == int:
+            s += x
+    return s
+
+
+print(get_sum([1, 2, 3, "a", True, [4, 5], "c", (4, 5)]))
+print(get_sum({5, 6, 7, '8', 5, '4'}))
+print(get_sum((10, "f", '33', True, 12)))
+print(get_sum(['1', True, False, (1, 23)]))
+
+# # Variant 2
+# def get_sum(it):
+#     return sum(filter(lambda x: type(x) == int, it))
+
+
+print("""
+Task 4""")
+
+
+# Task 4
+def get_even_sum(it):
+    return sum(filter(lambda x: type(x) == int and not x % 2, it))
+
+
+print(get_even_sum([1, 2, 3, "a", True, [4, 5], "c", (4, 5)]))
+print(get_even_sum({5, 6, 7, '8', 5, '4'}))
+print(get_even_sum((10, "f", '33', True, 12)))
+print(get_even_sum(['1', True, False, (1, 23)]))
+
+
+print("""
+Task 5""")
+
+
+# Task 5
+def get_list_dig(lst):
+    return list(filter(lambda x: type(x) in (int, float), lst))
+
+
+print(get_list_dig([1, 2, 3, "a", True, [4, 5], "c", (4, 5)]))
+print(get_list_dig({5, 6, 7, '8', 5, '4'}))
+print(get_list_dig((10, "f", '33', True, 12)))
+print(get_list_dig(['1', 15.5, True, False, (1, 23)]))

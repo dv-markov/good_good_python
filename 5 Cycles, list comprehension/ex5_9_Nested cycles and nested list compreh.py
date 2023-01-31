@@ -47,6 +47,7 @@ print(A)
 AA = [[x ** 2 for x in row] for row in A]
 print(AA)
 
+print("\n", "Преобразование многомерного списка в плоский", sep='')
 a = [x ** 2
      for row in A
      for x in row
